@@ -1,0 +1,17 @@
+
+.robots{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.profile{
+    text-transform: capitalize;
+    padding:20px;
+    border:solid 1px;
+    width:20%;
+    margin: 10px;
+}

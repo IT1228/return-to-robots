@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <img class='img' src={{avatar}}/>
+        <div>{{name}}</div>
+    <h5>Location</h5>
+     {{#address}} {{city}}, {{country}}, {{/address}}
+    <h5>Job</h5>
+        {{#job}}
+        {{job}}, {{company}}
+        {{/job}}
+        {{^job}}
+        {{/job}}
+    <h5>Contact</h5>
+        {{email}} | {{phone}}
+    <h5>Education </h5>
+        {{#university}}{{university}}{{/university}}</div>
+    <h5>Skills</h5>
+    <ul>
+        {{#skills}}
+    <li>{{.}}</li>
+        {{/skills}}
+    </ul>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href= "../public/styles.css">
+    </head>
+    <body>
+    <div>
+        <ul>
+            <li><a href="/unemployed">Looking For Work</a></li>
+            <li><a href="/employed">Employed</a></li>
+        </ul>
+    </div>
+    <div class = "robots">
+    {{#users}}
+    <div class= "profile">
+    <div class="image">
+    <img src ={{avatar}}></img>
+    </div>
+   <a href= "./users/{{id}}">{{name}}</a>
+    <div class='employment'>
+        {{#job}}{{job}}
+        {{company}}
+        {{/job}}
+        </div>
+    <div class'unemployment'>
+        {{^job}}
+            <div>Available for hire</div>
+        {{/job}}  
+    </div>
+    </div>
+    {{/users}}
+    </div>        
+    </body>
+</html>
